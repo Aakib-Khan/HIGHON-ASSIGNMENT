@@ -6,6 +6,8 @@ import path from 'path';
 import userRoutes from './routes/users.js'
 import { fileURLToPath } from 'url';
 const PORT = process.env.PORT
+import * as dotenv from 'dotenv' 
+dotenv.config()
 const app = express()
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

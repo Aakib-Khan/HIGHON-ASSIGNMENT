@@ -42,7 +42,7 @@ export default function AuthPage() {
       localStorage.setItem("user", JSON.stringify(result.token));
       redirect("/home");
     } else if(result.response.status === 400) {
-      console.log('sdkudbviusdvb');
+      // console.log('sdkudbviusdvb');
       alert("Please Enter Correct Credentials");
       
     }
